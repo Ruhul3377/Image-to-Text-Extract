@@ -33,7 +33,7 @@ for font in range(110):
 
 # print('Font list:',font_list)
 
-class PyShine_OCR_APP(QtWidgets.QMainWindow):
+class Image_OCR_APP(QtWidgets.QMainWindow):
     def __init__(self):
         QtWidgets.QMainWindow.__init__(self)
         self.ui = uic.loadUi('main.ui', self)
@@ -120,6 +120,6 @@ class PyShine_OCR_APP(QtWidgets.QMainWindow):
 
 
 app = QtWidgets.QApplication(sys.argv)
-mainWindow = PyShine_OCR_APP()
+mainWindow = Image_OCR_APP()
 mainWindow.show()
 sys.exit(app.exec_())
